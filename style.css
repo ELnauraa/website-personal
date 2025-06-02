@@ -1,0 +1,243 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+header {
+    background-color: #1a2238;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    
+}
+
+.logooo {
+   margin-right: auto;
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   border-radius: 25px;
+}
+
+.logo-img {
+    margin-right: 5px;
+    width: 150px;
+    height: auto;
+    opacity: 0.5;
+    padding: 10px;
+    border-radius: 25px;
+    display: block;
+}
+
+.logooo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+button {
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 12px;
+    background: linear-gradient(to right, #f3eeeb, #558cfa);
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: linear-gradient(to right, #f3eeeb , #558cfa);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title1 {
+    font-size: 15px;
+    font-family: helvetica;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #FF6A3D, #1a2238);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: jedagJedug 2s infinite;
+}
+
+@keyframes jedagJedug {
+    0% {
+        font-size: 20px
+    }
+    50% {
+        font-size: 22px
+    }
+    100% {
+        font-size: 20px
+    }
+}
+
+.decription {
+    font-size: 15px;
+    font-family: helvetica;
+}
+
+.img-background2 {
+    width: 100%;
+    max-width: 500px;
+    height:auto;
+}
+
+.paralax {
+    background-image: url(asset/foto/paralax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width:auto;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+@media (min-width: 500px) {
+    .card {
+        flex-direction: row;
+        justify-content: center; /* opsional, biar rapi di tengah */
+    }
+}
+
+.klik {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    padding: 24px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.8);
+    cursor: pointer;   
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .klik {
+        width: 100%;
+    }
+    .intro {
+      
+    }
+}
+
+.card-title {
+    background: linear-gradient(to right, rgba(243, 238, 235, 0.3), rgba(85, 140, 250, 0.3));
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1a2238;
+    color: #f3eeeb;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* css untuk galery foto */
+
